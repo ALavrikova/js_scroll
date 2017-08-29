@@ -12,16 +12,18 @@
 		}
 
 		#magic{
-			color: #777;
+			color: #98D74C;
 			border-right: 1px solid #777;
 			padding-right: 7px;
 			display: inline;
+			font-weight: 600;
+			font-family: Century Gothic;
 		}
 	</style>
 </head>
 <body>
 
-	Coding is <div id="magic"></div>
+	Coding is <div id="magic">&nbsp;</div>
 
 	<script>
 
@@ -32,9 +34,9 @@
 
 		function updateText()
 		{
-			el.innerHTML = el.innerHTML+words[word_counter][character_counter++];
+			el.innerHTML = el.innerHTML+ words[word_counter][character_counter++];
 
-			if(character_counter == words[word_counter].length)
+			if(character_counter == words[word_counter].length+1)
 			{
 				word_counter++; 	//choose a different word
 				character_counter = 0;	//start over with the first character of the word
